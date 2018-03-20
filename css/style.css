@@ -14,16 +14,11 @@ header {
              url('ptsans-regular.svg#PT Sans Regular') format('svg');
 
 }
-.main header {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "PT Sans";
-    color:#000000;
-}
+
 body {
-font-size: 14px;
-font-family: "PT Sans";
-color:#000000;
+  font-size: 14px;
+  font-family: "PT Sans";
+  color:#000000;
 }
 h1 {
     position: absolute;
@@ -34,43 +29,70 @@ h1 {
     text-transform:uppercase;
 }
 
-.advert {
-  font-size: 21px;
+.main header {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 14px;
   font-weight: bold;
-  font-family: "PT Sans";
   color:#000000;
   text-transform:uppercase;
 }
 
-div {
+.container {
+  width: 100%;
+  }
+.columns-container {
+  background: #ffffff;
+  padding: 10px;
+  }
+
+  .column {
+    width: 40px;
+    min-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: #000000;
+    background: #ffffff;
+  }
+.column1 {
+  float: left;
+}
+.column2 {
+  float: left;
+}
+.column3 {
+  float: left;
+}
+.column4 {
+  float: right;
+}
+.column5 {
+    float: right;
+}
+
+.advert {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  text-transform:uppercase;
+}
+
+.article {
 font-size: 14px;
 font-weight: bold;
 font-family: "PT Sans";
 color:#000000;
+background: #ffffff
 }
 
-.advert {
-    font-size: 21px;
-    font-weight: bold;
-    font-family: "PT Sans";
-    color:#000000
-    text-transform:"uppercase";
-  }
-
-  .num1 {
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-weight: normal;
-    color:#000000;
-  }
-
-  .div.reasons {
-    font-family: "PT Sans";
-    font-size: 14px;
-    font-weight: normal;
-    text-transform:uppercase;
-    color:#000000;
-    align:"center";
+.div.reasons {
+  font-family: "PT Sans";
+  font-size: 14px;
+  font-weight: normal;
+  text-transform:uppercase;
+  color:#000000;
+  align:"center";
   }
 .sticker1 {
 background-color:#81b3d2;
