@@ -1,25 +1,31 @@
 
+body {
+    font-family: 'PT Sans';
+    src: url('ptsans-regular.eot');
+    src: url('ptsans-regular.eot?#iefix') format('embedded-opentype'),
+         url('ptsans-regular.woff2') format('woff2'),
+         url('ptsans-regular.woff') format('woff'),
+         url('ptsans-regular.ttf') format('truetype'),
+         url('ptsans-regular.svg#PT Sans Regular') format('svg');
+    font-size: 14px;
+    color:#000000;
+}
+
+h1 {
+  position: absolute;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  color:#000000
+  text-transform:uppercase;
+}
 header {
     font-size: 14px;
     font-weight: bold;
     font-family: "PT Sans";
     color:#000000;
-    @font-face {
-        font-family: 'PT Sans';
-        src: url('ptsans-regular.eot');
-        src: url('ptsans-regular.eot?#iefix') format('embedded-opentype'),
-             url('ptsans-regular.woff2') format('woff2'),
-             url('ptsans-regular.woff') format('woff'),
-             url('ptsans-regular.ttf') format('truetype'),
-             url('ptsans-regular.svg#PT Sans Regular') format('svg');
-
 }
 
-body {
-  font-size: 14px;
-  font-family: "PT Sans";
-  color:#000000;
-}
 h1 {
     position: absolute;
     font-size: 21px;
@@ -38,17 +44,16 @@ h1 {
   text-transform:uppercase;
 }
 
-.container {
-  width: 100%;
-  }
-.columns-container {
+.menu {
+  display:flex;
+  justify-content: space-around;
   background: #ffffff;
+  width: 100%;
   padding: 10px;
   }
 
   .column {
-    width: 40px;
-    min-height: 30px;
+    width: 100px;
     font-size: 14px;
     font-weight: bold;
     text-transform:uppercase;
@@ -72,42 +77,86 @@ h1 {
 }
 
 .advert {
+  display:flex;
+  justify-content: space-around;
+  float:center;
   font-size: 21px;
   font-weight: bold;
   font-family: "PT Sans";
   text-transform:uppercase;
+  text-align: center;
 }
-
-.article {
-font-size: 14px;
-font-weight: bold;
-font-family: "PT Sans";
-color:#000000;
-background: #ffffff
-}
-
-.div.reasons {
+.reasons {
+  display:flex;
+  justify-content: space-around;
+  float:center;
   font-family: "PT Sans";
   font-size: 14px;
   font-weight: normal;
   text-transform:uppercase;
   color:#000000;
-  align:"center";
+  text-align: center;
+  padding:30px;
+  }
+
+.section1{
+    display:flex;
   }
 .sticker1 {
+float:left;
+width:150px;
+height:156px;
 background-color:#81b3d2;
-position: absolute;
-width: 400px;
-height: 256px;
+font-size: 14px;
 color:#ffffff;
+text-transform:uppercase;
+text-align: center;
+margin-top:30px;
 }
-section first{
+
+.sticker1.num1 {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color:#ffffff;
+  text-align: center;
+}
+.sticker1.num1.span {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  color:#ffffff;
+  text-align: center;
+
+.p.sticker1-title {
+  font-size: 21px;
+  font-weight: bold;
+}
+.p.sticker1-text number {
+  font-size: 14px;
+  color:#ffffff;
+  text-transform:uppercase;
+}
+.p.sticker1-text {
+  font-size: 14px;
+  color:#ffffff;
+  text-transform:uppercase;
+}
 
 }
 
-section second {
-
+.section1.arizona {
+  width:800px;
+  height:156px;
 }
-section find {
+.section2 {
+display:flex;
+}
+..section2.icons {
+ float:center;
+}
 
+
+.section3 {
+  display:flex;
+  X40 Y1366;
 }
