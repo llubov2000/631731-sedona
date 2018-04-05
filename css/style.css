@@ -1,153 +1,141 @@
-
 body {
-    font-family: 'PT Sans';
-    src: url('ptsans-regular.eot');
-    src: url('ptsans-regular.eot?#iefix') format('embedded-opentype'),
-         url('ptsans-regular.woff2') format('woff2'),
-         url('ptsans-regular.woff') format('woff'),
-         url('ptsans-regular.ttf') format('truetype'),
-         url('ptsans-regular.svg#PT Sans Regular') format('svg');
-    font-size: 14px;
-    color:#000000;
-}
-/*
-h1 {
-  position: absolute;
-  font-size: 21px;
-  font-weight: bold;
-  font-family: "PT Sans";
-  color:#000000
-  text-transform:uppercase;
-}
-*/
-head {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "PT Sans";
-    color:#000000;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
 }
 main {
   width: 100%;
   margin: 0 auto;
   font-size: 14px;
   font-weight: bold;
-  color:#000000;
-  text-transform:uppercase;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.intro {
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+z-index: 10;
+opacity:1;
 }
 
 .menu {
-  display:flex;
-  justify-content: space-around;
-  background: #ffffff;
-  width: 100%;
-  padding: 10px;
-  }
-
-.column {
-  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left:0px;
+  top:0px;
   font-size: 14px;
-  font-weight:bold;
-  text-transform:uppercase;
+  font-weight: bold;
+  font-family: "PT Sans";
   color: #000000;
   background: #ffffff;
-  }
-
-.welcome {
-  display:flex;
-  flex-direction: column;
-  position: absolute;
-  width:100%;
-  height:auto;
-}
-.welcom1 {
-  display:flex;
-  width:100%;
-}
-.welcom2 {
-  display:flex;
-  position: absolute;
-  left: 546px;
-  top:50px;
-  width: 188px;
-  height: 45px;
-  z-index: 55;
-}
-.welcom3 {
-  display:flex;
-  position: absolute;
-  left: 553px;
-  top: 188px;
-  width: 176px;
-  height: 30px;
-  z-index: 54;
-}
-.welcom4 {
-  display:flex;
-  position: absolute;
-  left: 411px;
-  top: 270px;
-  width: 458px;
-  height: 78px;
-  z-index: 52;
-}
-.welcom5 {
-  display:flex;
-  position: absolute;
-  left:500px;
-  top:400px;
-}
-.welcom6 {
-  position:absolute;
-  display:flex;
-  position: absolute;
-  left:0;
-  bottom:0px;
+  width: 100%;
+  height: 40px;
+  padding:10px;
   z-index: 100;
 }
 
+.menu-info {
+display: flex;
+width: 20%;
+align-items: center;
+}
+.menu-foto {
+display: flex;
+width: 20%;
+align-items: center;
+  }
+.menu-logo {
+display: flex;
+width: 20%;
+z-index: 100;
+  }
+.menu-map {
+display: flex;
+width: 20%;
+align-items: center;
+      }
+.menu-hotels {
+display: flex;
+width: 20%;
+align-items: center;
+ }
+.welcom {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 30%;
+  top:132px;
+  z-index:100;
+}
+.welcom1 {
+  position: absolute;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+  z-index: 100;
+}
+h2 {
+  align-items: center
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  color:#000000
+  text-transform:uppercase;
 
 
 .advert {
-  display:flex;
-  font-size:21px;
-  font-weight:bold;
-  font-family:"PT Sans";
-  text-transform:uppercase;
+  display: flex;
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "PT Sans";
+  text-transform: uppercase;
   text-align: center;
-  margin-top:50px;
+  margin-top: 50px;
 }
-.reasons {
-  display:flex;
-  font-family:"PT Sans";
-  font-size:14px;
-  text-transform:uppercase;
-  color:#000000;
-  text-align: center;
-  margin-top:30px;
-  marginbottom:30px;
-  }
 
-.section1{
-    display:flex;
-    flex-direction:row;
-  }
+.reasons {
+  display: flex;
+  font-family: "PT Sans";
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+}
+
 .sticker {
-display:flex;
-flex-direction:column;
-width:150px;
-height:156px;
-background-color:#81b3d2;
-font-size: 14px;
-color:#ffffff;
-text-transform:uppercase;
-text-align: center;
-margin-top:30px;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 156px;
+  background-color: #81b3d2;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .sticker1 {
   font-size: 14px;
   font-family: "PT Sans";
-  color:#ffffff;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -155,23 +143,29 @@ margin-top:30px;
   font-size: 21px;
   font-weight: bold;
   font-family: "PT Sans";
-  text-transform:uppercase;
-  color:#ffffff;
+  text-transform: uppercase;
+  color: #ffffff;
   text-align: center;
+}
 
-.section1 arizona {
-  width:800px;
-  height:156px;
+.section1 .arizona {
+  width: 800px;
+  height: 156px;
 }
 
 
 .section2 {
-display:flex;
+  display: flex;
 }
 
 
 
 .section3 {
-  display:flex;
-  X40 Y1366;
+  display: flex;
+}
+
+
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
 }
