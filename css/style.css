@@ -27,10 +27,11 @@ opacity:1;
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-content: stretch;
   position: absolute;
   left:0px;
   top:0px;
+  text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   font-family: "PT Sans";
@@ -73,7 +74,9 @@ align-items: center;
  }
 .welcom {
   display: flex;
-  align-items: center;
+  position: absolute;
+  left: 506px;
+  top: 132px;
   position: absolute;
   top:132px;
   z-index:100;
@@ -82,7 +85,8 @@ align-items: center;
   position: absolute;
   display: flex;
   position: absolute;
-  align-items: center;
+  flex-grow:100;
+  left: 0px;
   bottom: 50px;
   width: 100%;
   z-index: 100;
