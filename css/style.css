@@ -25,10 +25,17 @@ width:1200px;
 height: 717px;
 z-index: 20;
 }
-.background {
+.intro-catalog {
 display: flex;
-z-index: 10;
+flex-direction: column;
+align-content: center;
+background-image: url(../img/catalog_background.png);
+background-repeat: no-repeat;
+width:1200px;
+height: 717px;
+z-index: 20;
 }
+
 .menu {
 display:flex;
 flex-direction: row;
@@ -49,39 +56,54 @@ z-index: 100;
 
 .menu-info {
 display: flex;
-justify-content: center;
-width:240px;
-}
-
+position: relative;
+left: 40px;
+top: 0px;
+width: 239px;
+height: 56px;
+z-index: 113;
 }
 .menu-foto {
 display: flex;
-justify-content: center;
-width:240px;
+position: relative;
+left: 279px;
+top: 0px;
+width: 239px;
+height: 56px;
+z-index: 112;
 }
-
 .menu-logo {
 display: flex;
-justify-content: center;
 position: relative;
-left50%;
-width:240px;
+left: 518px;
+top: 0px;
+width: 244px;
+height: 56px;
+z-index: 100;
 }
 .menu-map {
 display: flex;
-justify-content: center;
-width:240px;
-}
-.menu-hotels {
-display: flex;
-justify-content: center;
-width:240px;
+position: relative;
+left: 762px;
+top: 0px;
+width: 239px;
+height: 56px;
+z-index: 100;
 }
 
+.menu-hotels {
+display: flex;
+position: relative;
+left: 1001px;
+top: 0px;
+width: 239px;
+height: 56px;
+z-index: 110;
+}
 .welcom {
 display: flex;
 position: absolute;
-left: 400px;
+left: 545px;
 top: 132px;
 position: absolute;
 top:132px;
@@ -116,6 +138,7 @@ font-family: "PT Sans";
 text-transform: uppercase;
 text-align: center;
 padding-top:30px;
+padding-bottom: 20px;
 }
 
 .advert-text {
@@ -125,7 +148,7 @@ font-weight: normal;
 text-transform: uppercase;
 color: #000000;
 text-align: center;
-margin-top: 10px;
+margin-top: 0px;
 margin-bottom: 10px;
 }
 .section1 {
@@ -183,7 +206,7 @@ display: flex;
 flex-direction: column;
 background-color: #ffffff;
 width: 1200px;
-height: 156px;
+height: 256px;
 }
 
 .infobox {
@@ -201,6 +224,10 @@ background-image: url(../img/map.png);
 .findform {
 display: flex;
 flex-direction: column;
+position: absolute;
+left: 535px;
+top: 2000px;
+background-color:#ffffff;
 border: darkgray solid 1px;
 font-size: 14px;
 font-weight: bold;
@@ -219,20 +246,46 @@ font-weight: bold;
 text-transform: uppercase;
 background-color:#766357;
 color: #ffffff;
-padding-top: 30px;
+padding-top: 50px;
 width: 568px;
-height: 86px;
+height: 76px;
 z-index: 100;
+}
+.find-text {
+position: relative;
+left:30px;
+top:30px;
+padding-bottom: 15px;
 }
 .button {
 display: flex;
 justify-content: center;
 font-size: 21px;
 font-weight: bold;
+position: relative;
+top: 70px;
+left: 55px;
 background-color:#81b3d2;
 color: #ffffff;
 padding-top: 30px;
 width: 458px;
 height: 58px;
 z-index: 100;
+}
+ hotelbox. {
+display: flex;
+flex-direction: row;
+
+ }
+.footer {
+display: flex;
+flex-direction: row;
+background-color: #ffffff;
+width: 1200px;
+height: 256px;
+}
+.footer-box {
+display: flex;
+width: 400px;
+height: 256px;
 }
