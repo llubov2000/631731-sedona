@@ -250,6 +250,7 @@ width: 1200px;
 height: 60px;
 }
 .footer-box {
+position: absolute
 display: flex;
 text-align: center;
 font-size: 14px;
@@ -266,4 +267,43 @@ vertical-align: middle;
 font-size: 21px;
 font-weight: bold;
 text-transform: uppercase;
+}
+.social-icon {
+display: inline-block;
+vertical-align: middle;
+width: 46px;
+height: 48px;
+font-size: 0;
+background: url(../img/footer-icons.png) no-repeat;
+margin: 0 6px 6px 0;
+}
+.social-icon.fb {
+background: url(../img/footer-icons.png) -47px 0 no-repeat;
+width: 47px;
+}
+.social-icon.youtube {
+background: url(../img/footer-icons.png) -95px 0 no-repeat;
+}
+.social-icon:hover {
+background-position: 0 -49px;
+}
+
+.social-icon.fb:hover {
+background-position: -47px -49px;
+}
+
+.social-icon.youtube:hover {
+background-position: -95px -49px;
+}
+.social-icon:active {
+background-position: 0 -98px;
+}
+.social-icon.fb:active {
+background-position: -47px -98px;
+}
+.social-icon.youtube:active {
+background-position: -95px -98px;
+}
+.social-icon:last-child {
+margin-right: 0;
 }
