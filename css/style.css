@@ -24,7 +24,8 @@ main {
 
 .wrap {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  box-shadow: 0 -5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .intro {
@@ -141,7 +142,7 @@ main {
   justify-content: center;
   width: 400px;
   min-height: 256px;
-  padding: 15px 55px;
+  padding: 10px 40px;
   box-sizing: border-box;
   color: #fff;
   background-color: #81b3d2;
@@ -456,15 +457,17 @@ input[name="date"]:focus + .icon-calendar::before {
 
 .main-footer {
 display: flex;
-position: relative;
 width: 1200px;
+margin-left: auto;
+margin-right: auto;
 margin-top: -120px;
 padding-top: 36px;
 padding-bottom: 36px;
 text-align: center;
 background-color: rgba(255, 255, 255, 0.8);
 align-items: center;
-right:0;
+position: relative;
+left: 0;
 z-index: 10;
 }
 
@@ -1093,3 +1096,64 @@ input[type="checkbox"]:checked:disabled + .icon-check-off:before {
 [type="checkbox"] {
   display: none;
 }
+/*decorations*/
+
+a {
+	text-decoration: none;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+	font-family: "symbols-sedona";
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1em;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	text-align: center;
+	text-decoration: inherit;
+	text-transform: none;
+	speak: none;
+}
+
+.icon-facebook::before {
+	content: "\66";
+}
+.icon-twitter::before {
+	content: "\74";
+}
+.icon-up-dir::before {
+  content: "\25b2";
+  transform: scale(0.6);
+}
+.icon-down-dir::before {
+  content: "\25bc";
+  transform: scale(0.6);
+}
+.icon-star::before {
+  content: "\2605";
+  align: right;
+}
+.icon-check-off::before {
+	content: "\2610";
+}
+.icon-check-on::before {
+  content: "\2611";
+  transform: scale(1.5);
+}
+.icon-calendar::before {
+	content: "\e800";
+}
+.icon-plus::before {
+	content: "\e801";
+}
+.icon-minus::before {
+	content: "\e802";
+}
+.icon-youtube::before {
+  content: "\f39e";
+}
+
