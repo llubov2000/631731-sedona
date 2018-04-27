@@ -258,6 +258,7 @@ main {
 .form-group,
 .half-width {
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .date {
@@ -270,8 +271,10 @@ main {
   box-sizing: border-box;
   width: 40px;
   height: 38px;
+  padding:0px;
   text-align: center;
   background-color: #f2f2f2;
+
 }
 
 .icon-calendar:before {
@@ -318,6 +321,8 @@ main {
 .form-group input[type="text"] {
   width: 304.7px;
   padding-left: 15px;
+  box-sizing: border-box;
+  margin-top: 0px;
 }
 
 .half-width {
@@ -349,7 +354,7 @@ main {
 }
 
 .half-width:first-child {
-  padding-right: 3px;
+  padding-right: 0px;
 }
 
 .half-width:last-child {
@@ -357,6 +362,8 @@ main {
 }
 
 .btn {
+  text-align: center;
+  width: 458px;
   font-family: inherit;
   font-size: 21px;
   font-weight: inherit;
@@ -369,32 +376,6 @@ main {
   background-color: #81b3d2;
 }
 
-.social-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-}
-
-.social-btn:last-child {
-  margin-right: 0;
-}
-
-.social-btn:focus,
-.btn:focus {
-  outline: none;
-}
-
-.social-btn:hover,
-.btn:hover {
-  background-color: #669ec0;
-}
-
-.social-btn:active,
-.btn:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
-}
 
 input[type="text"]:focus {
   outline: none;
@@ -432,7 +413,9 @@ input[name="date"]:focus + .icon-calendar {
 input[name="date"]:focus + .icon-calendar::before {
   margin-left: -9.7px;
 }
-
+input[name="icon-minus"]:hover {
+  background-color: #c2c2c2;
+}
 .icon-calendar:active::before {
   color: #81b3d2;
 }
@@ -488,7 +471,37 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  }
 
+.social-btn:last-child {
+  margin-right: 0;
+}
+
+.social-btn:focus,
+.btn:focus {
+  outline: none;
+}
+
+.social-btn:hover,
+.btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn:active,
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
 .developer {
 display: flex;
 align-items: center;
@@ -497,14 +510,6 @@ align-items: center;
 .our-hash-tag {
 font-size: 21px;
 font-weight: bold;
-}
-
-.social-btn {
-position: relative;
-width: 46px;
-height: 48px;
-color: #ffffff;
-background-color: #81b3d2;
 }
 
 .social-btn::before {
@@ -993,6 +998,7 @@ input[type="checkbox"]:checked:disabled + .icon-check-off:before {
 
 .icon-star {
   color: #81b3d2;
+  text-align: right;
 }
 
 .icon-star::before {
@@ -1118,7 +1124,15 @@ a {
 	text-transform: none;
 	speak: none;
 }
-
+.icon-calendar::before {
+	content: "\e800";
+}
+.icon-plus::before {
+	content: "\e801";
+}
+.icon-minus::before {
+	content: "\e802";
+}
 .icon-facebook::before {
 	content: "\66";
 }
@@ -1144,15 +1158,7 @@ a {
   content: "\2611";
   transform: scale(1.5);
 }
-.icon-calendar::before {
-	content: "\e800";
-}
-.icon-plus::before {
-	content: "\e801";
-}
-.icon-minus::before {
-	content: "\e802";
-}
+
 .icon-youtube::before {
   content: "\f39e";
 }
